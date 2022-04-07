@@ -1,0 +1,74 @@
+// Breakpoints
+@mixin smMaxBreakPoint {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+@mixin smMaxBreakPoint {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin mdMaxBreakPoint {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lgMaxBreakPoint {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin xlMaxBreakPoint {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin xxlMaxBreakPoint {
+  @media (max-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+@mixin customMinBreakPoint($size) {
+  @media (max-width: $size+"px") {
+    @content;
+  }
+}
+
+@mixin customMaxBreakPoint($size) {
+  @media (max-width: $size+"px") {
+    @content;
+  }
+}
+
+// flex center
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// flex-between
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// flex-around
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

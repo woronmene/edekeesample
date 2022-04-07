@@ -1,0 +1,52 @@
+@import "../../Styles/mixins";
+@import "../../Styles/functions";
+@import "../../Styles/variables";
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  padding-top: toRem(100);
+  background-image: url("../../public/images/heroImage.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  //   &Wrapper {
+
+  //   }
+  &PrimaryText {
+    font-size: 5.5vw;
+    margin-bottom: toRem(30);
+    @include lgMaxBreakPoint {
+      font-size: toRem(40);
+    }
+  }
+  &SecondaryText {
+    font-size: 1.5vw;
+    // font-size: 1.5vw;
+    margin-bottom: toRem(50);
+    color: $text-dark-100;
+
+    @include lgMaxBreakPoint {
+      font-size: toRem(15);
+    }
+  }
+  .videoPlayIcon {
+    cursor: pointer;
+    img {
+      width: 4vw;
+      @include lgMaxBreakPoint {
+        width: toRem(40);
+      }
+
+      //   &:hover {
+      //     transform: scale(1.3);
+      //   }
+    }
+  }
+}

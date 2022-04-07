@@ -1,0 +1,33 @@
+@import "../../Styles/mixins";
+@import "../../Styles/functions";
+@import "../../Styles/variables";
+.values {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  color: black;
+
+  &Wrapper {
+    // border: 3px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subheading {
+  }
+
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+    }
+  }
+
+  .mainContentHeading {
+  }
+  .mainContentInfo {
+  }
+}

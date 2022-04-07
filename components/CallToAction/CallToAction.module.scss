@@ -1,0 +1,70 @@
+@import "../../Styles/mixins";
+@import "../../Styles/functions";
+@import "../../Styles/variables";
+.callToAction {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  .callToActionWrapper {
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 3px solid rebeccapurple;
+
+    .image {
+      img {
+        width: 540px;
+        margin-right: 30px;
+        // border: 3px solid red;
+        @include lgMaxBreakPoint {
+          width: 400px;
+        }
+      }
+      @include mdMaxBreakPoint {
+        display: none;
+      }
+    }
+
+    .content {
+      .heading {
+        font-size: 4.4vw;
+        white-space: nowrap;
+        margin-bottom: 30px;
+
+        @include lgMaxBreakPoint {
+          font-size: toRem(40);
+          white-space: normal;
+        }
+      }
+      .info {
+        font-size: 1.6vw;
+        margin-bottom: 30px;
+
+        @include lgMaxBreakPoint {
+          font-size: toRem(18);
+        }
+      }
+      .downloadButtons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // border: 1px solid red;
+
+        span {
+          img {
+            width: 13vw;
+            // margin-left: 20px;
+            @include lgMaxBreakPoint {
+              width: toRem(180);
+            }
+          }
+        }
+        .googlePlayBtn {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

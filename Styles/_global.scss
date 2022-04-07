@@ -1,0 +1,204 @@
+@import "./mixins";
+@import "./functions";
+@import "./variables";
+
+.globalContainer {
+  max-width: 70vw;
+  margin: 0 auto;
+
+  @include lgMaxBreakPoint {
+    max-width: 80vw;
+  }
+  // border: 3px solid black;
+}
+
+// .global-btn {
+//   // background-color: $orange;
+//   color: $white;
+//   padding: 12px 26px;
+//   border-radius: 5px;
+//   transition: filter 300ms;
+
+//   &:hover {
+//     filter: brightness(0.9);
+//     // background-color: #e23c32;
+//   }
+// }
+
+// .global-email-input {
+//   width: toRem(200);
+//   height: toRem(40);
+//   border: 2px solid $text-medium-dark;
+//   border-radius: toRem(5);
+//   padding: 0 5px;
+//   margin-right: 15px;
+//   margin-bottom: 15px;
+//   background-color: #f6f6f9;
+//   font-family: "Josefin Sans", sans-serif;
+
+//   @include smMaxBreakPoint {
+//     width: 100%;
+//     text-align: center;
+//   }
+// }
+
+// .global-main-text {
+//   font-size: toRem(48);
+//   line-height: toRem(54);
+//   font-weight: bold;
+//   margin-bottom: 7px;
+
+//   @include lgMaxBreakPoint {
+//     font-size: toRem(36);
+//     line-height: toRem(40);
+//   }
+// }
+// .global-sub-text {
+//   font-size: toRem(24);
+//   line-height: toRem(48);
+//   font-weight: bold;
+//   // margin-bottom: 7px;
+
+//   // @include lgMaxBreakPoint {
+//   //   font-size: toRem(36);
+//   //   line-height: toRem(40);
+//   // }
+// }
+
+// .global-desc-text {
+//   font-size: toRem(18);
+//   line-height: toRem(28.5);
+//   margin-bottom: 20px;
+//   @include lgMaxBreakPoint {
+//     font-size: toRem(16);
+//     line-height: toRem(25.3);
+//   }
+// }
+// .global-desc-text-2 {
+//   font-size: toRem(16);
+//   line-height: toRem(25);
+//   margin-bottom: 20px;
+//   // @include lgMaxBreakPoint {
+//   //   font-size: toRem(16);
+//   //   line-height: toRem(25.3);
+//   // }
+// }
+
+// .global-horizontal-rule {
+//   margin: 20px 0;
+//   width: 100%;
+//   opacity: 0.6;
+// }
+
+// .global-dark {
+//   color: $text-dark;
+// }
+// .global-lighter-dark {
+//   color: $text-lighter-dark;
+// }
+
+// .global-blue {
+//   color: $blue;
+// }
+// .global-orange {
+//   color: $orange;
+// }
+// .global-bg-blue {
+//   background-color: $blue;
+// }
+// .global-bg-orange {
+//   background-color: $orange;
+// }
+
+.globalPurple {
+  color: $purple;
+}
+.globalContent {
+  width: 50%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6vw;
+  line-height: 2.9vw;
+
+  @include xlMaxBreakPoint {
+    font-size: toRem(17);
+  }
+  @include mdMaxBreakPoint {
+    width: 90%;
+    line-height: 25px;
+  }
+}
+
+.width70 {
+  width: 60%;
+
+  @include lgMaxBreakPoint {
+    width: 70%;
+  }
+  @include mdMaxBreakPoint {
+    width: 90%;
+  }
+}
+
+.mlAuto {
+  margin-left: auto;
+
+  @include mdMaxBreakPoint {
+    margin-left: 0;
+  }
+}
+
+.globalHeading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+
+  line-height: 3.9vw;
+  margin-bottom: 20px;
+
+  @include xlMaxBreakPoint {
+    line-height: 50px;
+    font-size: toRem(40);
+  }
+  @include lgMaxBreakPoint {
+    line-height: 48px;
+  }
+
+  @include mdMaxBreakPoint {
+    // width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+.globalSubheading {
+  font-size: 16px;
+  color: $purple;
+  margin-bottom: 20px;
+
+  @include xlMaxBreakPoint {
+    font-size: toRem(16);
+  }
+}
+.globalDot {
+  color: $purple;
+}
+
+.globalTextLight {
+  color: $text-light;
+}
+
+.globalTextDark100 {
+  color: $text-dark-100;
+}
+.globalTextDark200 {
+  color: $text-dark-200;
+}
+.globalTextDark300 {
+  color: $text-dark-300;
+}
+.globalTextDark400 {
+  color: $text-dark-400;
+}
+.globalTextDark500 {
+  color: $text-dark-500;
+}
