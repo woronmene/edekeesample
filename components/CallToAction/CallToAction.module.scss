@@ -63,6 +63,10 @@
         }
         .googlePlayBtn {
           margin-right: 30px;
+          @include mdMaxBreakPoint {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
         }
       }
     }
