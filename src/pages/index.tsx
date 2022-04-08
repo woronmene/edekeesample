@@ -1,12 +1,14 @@
 import Head from "next/head";
 import CallToAction from "../../components/CallToAction";
 import Creators from "../../components/Creators";
+import Footer from "../../components/Footer/Footer";
 // import React from "react";
 // import Image from 'next/image'
 import Header from "../../components/Header";
 import Introducing from "../../components/Introducing";
 import Manufacturers from "../../components/Manufacturers";
 import Navbar from "../../components/Navbar";
+import OurWhy from "../../components/OurWhy";
 import Showcase from "../../components/Showcase";
 import Users from "../../components/Users";
 import Values from "../../components/Values";
@@ -32,6 +34,8 @@ export default function Home() {
         <Manufacturers />
         <Creators />
         <CallToAction />
+        <OurWhy />
+        <Footer />
       </main>
     </div>
   );

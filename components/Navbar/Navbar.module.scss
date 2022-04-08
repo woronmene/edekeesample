@@ -10,6 +10,8 @@
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1000;
+  // display: none;
 
   .navbarWrapper {
     padding-left: 5%;
@@ -56,11 +58,18 @@
       border: 1px solid $purple;
       border-radius: toRem(30);
       padding: 0;
-      width: toRem(150);
-      height: toRem(50);
+      width: 9vw;
+      // width: toRem(150);
+      height: 3vw;
+      // height: toRem(50);
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include lgMaxBreakPoint {
+        width: toRem(150);
+        height: toRem(50);
+      }
     }
   }
 }

@@ -5,31 +5,72 @@
 .header {
   height: 100vh;
   width: 100vw;
-  padding-top: toRem(100);
-  background-image: url("../../public/images/heroImage.png");
-  background-position: center;
-  background-size: cover;
+  // padding-top: toRem(100);
+  // background-image: url("../../public/images/heroImage.png");
+  // background-position: center;
+  // background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
-  //   &Wrapper {
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    // z-index: -1;
+    // opacity: 0;
+  }
 
-  //   }
-  &PrimaryText {
+  .thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/peggs-web.appspot.com/o/heroImg.jpg?alt=media&token=d1554a5d-13fb-4e81-a65c-b8d8ec823177");
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+
+    .imageWrapper > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      border: 2px solid red;
+    }
+  }
+
+  .headerPrimaryText {
     font-size: 5.5vw;
     margin-bottom: toRem(30);
+    z-index: 3;
     @include lgMaxBreakPoint {
       font-size: toRem(40);
     }
   }
-  &SecondaryText {
+  .headerSecondaryText {
     font-size: 1.5vw;
     // font-size: 1.5vw;
     margin-bottom: toRem(50);
+    z-index: 3;
     color: $text-dark-100;
 
     @include lgMaxBreakPoint {
@@ -37,6 +78,7 @@
     }
   }
   .videoPlayIcon {
+    // z-index: 2;
     cursor: pointer;
     img {
       width: 4vw;
