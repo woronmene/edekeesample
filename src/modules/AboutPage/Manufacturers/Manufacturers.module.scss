@@ -1,0 +1,56 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.manufacturers {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f1f1f;
+  padding: 2rem 0;
+  margin-bottom: 30px;
+
+  @include mdMaxBreakPoint {
+    height: auto;
+    min-height: 100vh;
+
+    padding: 2rem 0;
+  }
+
+  &Wrapper {
+    // border: 3px solid red;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      // min-height: 100vh;
+    }
+  }
+  .content {
+    // border: 3px solid black;
+    text-align: right;
+    @include mdMaxBreakPoint {
+      margin-bottom: 50px;
+      text-align: left;
+    }
+  }
+  .phoneImage {
+    img {
+      width: 19vw;
+
+      @include lgMaxBreakPoint {
+        width: 300px;
+      }
+      //   border: 3px solid black;
+
+      @include mdMaxBreakPoint {
+        width: 200px;
+      }
+    }
+  }
+}

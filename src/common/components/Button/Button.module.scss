@@ -1,0 +1,19 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.button {
+  //   border: 1px solid red;
+  //   height: 45px;
+  //   width: 100px;
+  background-color: #a271ff;
+  padding: 0.8vw 1.7vw;
+  //   padding: 12px 27px;
+  border-radius: 40px;
+  font-size: 0.7vw;
+  cursor: pointer;
+  @include xlMaxBreakPoint {
+    padding: 12px 27px;
+    font-size: 11px;
+  }
+}

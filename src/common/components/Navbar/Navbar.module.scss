@@ -1,0 +1,209 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1000;
+
+  .navbarContainer {
+    // height: 50px;
+    padding: 1vw 0;
+    // padding: 20px 0;
+    background-color: #1f1f1f;
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    top: 0;
+
+    @include xlMaxBreakPoint {
+      // border: 1px solid red;
+      padding: 20px 0;
+    }
+
+    &.nav__transluscent {
+      background-color: rgba(31, 31, 31, 0.8);
+      backdrop-filter: blur(30px);
+      box-shadow: 1px 1px 1px rgba(31, 31, 31, 0.2);
+    }
+
+    .navbarLeft {
+      flex: 1;
+      margin-left: 10%;
+      margin-right: 7%;
+    }
+    .menuIcon {
+      cursor: pointer;
+      img {
+        width: 6.6vw;
+
+        @include xlMaxBreakPoint {
+          // border: 1px solid red;
+          width: 100px;
+        }
+        // width: 100px;
+        // border: 1px solid red;
+      }
+    }
+
+    .navbarCenter {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .navbarRight {
+      // height: 50px;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 10%;
+      // border: 1px solid red;
+    }
+    .navbarIcons {
+      width: 20vw;
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include lgMaxBreakPoint {
+        width: 30vw;
+        // border: 2px solid green;
+      }
+
+      @include mdMaxBreakPoint {
+        width: 40vw;
+        // width: 2px solid white;
+      }
+
+      .navbarIconItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        // border: 1px solid red;
+
+        p {
+          font-size: 0.5vw;
+          // font-size: 8px;
+
+          @include xlMaxBreakPoint {
+            font-size: 8px;
+          }
+        }
+      }
+
+      img {
+        width: 1.3vw;
+        // width: 20px;
+        margin-bottom: 0.3vw;
+        // margin-bottom: 5px;
+
+        @include xlMaxBreakPoint {
+          width: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .sideBar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(30px);
+    height: 100vh;
+    width: 15%;
+    color: white;
+    top: 0;
+    left: -100%;
+    transition: all 0.4s ease-in;
+
+    &.active {
+      left: 0%;
+    }
+
+    .closeIcon {
+      position: absolute;
+      padding: 15px;
+      left: 10%;
+      top: 1%;
+    }
+  }
+}
+
+// @media screen and (max-width: 1024px) {
+//   .navbar {
+//     .navbarContainer {
+//       .navbarIcons {
+//         width: 60%;
+//       }
+//     }
+//     .sideBar {
+//       width: 25%;
+//     }
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .navbar {
+//     .navbarContainer {
+//       .navbarIcons {
+//         width: 80%;
+//       }
+//     }
+//     .sideBar {
+//       width: 30%;
+//     }
+//   }
+// }
+// @media screen and (max-width: 480px) {
+//   .navbar {
+//     .navbarContainer {
+//       .navbarLeft {
+//         flex: 0.5;
+//       }
+//       .navbarCenter {
+//         flex: 0.5;
+//         justify-content: flex-start;
+//         // border: 1px solid red;
+//       }
+
+//       .navbarRight {
+//         flex: 4;
+//         padding-right: 2.5%;
+//       }
+//       .navbarIcons {
+//         width: 55%;
+//       }
+//     }
+
+//     .sideBar {
+//       width: 50%;
+//     }
+//   }
+// }
+// @media screen and (max-width: 300px) {
+//   .navbar {
+//     .navbarContainer {
+//       .navbarIcons {
+//         width: 65%;
+
+//         img {
+//           width: 13px;
+//         }
+//       }
+//       .menuIcon {
+//         img {
+//           width: 20px;
+//         }
+//       }
+//     }
+//     .sideBar {
+//       width: 60%;
+//     }
+//   }
+// }

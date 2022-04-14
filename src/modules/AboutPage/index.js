@@ -1,0 +1,11 @@
+export { default as CallToAction } from "./CallToAction";
+export { default as Creators } from "./Creators";
+export { default as Footer } from "./Footer";
+export { default as Header } from "./Header";
+export { default as Introducing } from "./Introducing";
+export { default as Manufacturers } from "./Manufacturers";
+export { default as Navbar } from "./Navbar";
+export { default as OurWhy } from "./OurWhy";
+export { default as Showcase } from "./Showcase";
+export { default as Users } from "./Users";
+export { default as Values } from "./Values";

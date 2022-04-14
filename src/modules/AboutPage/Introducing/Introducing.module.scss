@@ -1,0 +1,54 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.introducing {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f1f1f;
+  color: black;
+  position: relative;
+  overflow: hidden;
+
+  .ellipse1 {
+    position: absolute;
+    top: -20%;
+    left: 15%;
+    transform: rotate(50deg);
+  }
+  .ellipse2 {
+    position: absolute;
+    top: -40%;
+    left: 55%;
+    transform: rotate(300deg);
+  }
+  .ellipse3 {
+    position: absolute;
+    top: -80%;
+    left: 75%;
+    transform: rotate(300deg);
+  }
+
+  &Wrapper {
+    // border: 3px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subheading {
+  }
+
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+    }
+  }
+
+  .mainContentHeading {
+  }
+  .mainContentInfo {
+  }
+}

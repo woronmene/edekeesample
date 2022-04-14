@@ -1,0 +1,39 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.values {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  &Wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ellipse1 {
+    position: absolute;
+    top: -40%;
+    left: 10%;
+    transform: rotate(330deg);
+  }
+  .ellipse2 {
+    position: absolute;
+    top: -75%;
+    left: 65%;
+    transform: rotate(270deg);
+  }
+
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.users {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 2rem 0;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+
+  .ellipse1 {
+    position: absolute;
+    top: -20%;
+    left: 1%;
+    transform: rotate(350deg);
+  }
+  .ellipse2 {
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    transform: rotate(300deg);
+    z-index: 1;
+  }
+
+  @include mdMaxBreakPoint {
+    height: auto;
+    min-height: 100vh;
+
+    padding: 2rem 0;
+  }
+
+  &Wrapper {
+    // border: 3px solid red;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-direction: row-reverse;
+
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      // min-height: 100vh;
+    }
+  }
+  .content {
+    // border: 3px solid black;
+    // text-align: right;
+    @include mdMaxBreakPoint {
+      margin-bottom: 50px;
+    }
+  }
+  .phoneImage {
+    img {
+      width: 19vw;
+      z-index: 2;
+
+      @include lgMaxBreakPoint {
+        width: 300px;
+      }
+      //   border: 3px solid black;
+
+      @include mdMaxBreakPoint {
+        width: 200px;
+      }
+    }
+  }
+}

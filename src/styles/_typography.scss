@@ -1,0 +1,109 @@
+@import "./mixins";
+@import "./functions";
+@import "./variables";
+
+@font-face {
+  font-family: Product sans;
+  src: url("../../public/fonts/Product_Sans_Regular.woff2") format("woff2"),
+    url("../../public/fonts/Product_Sans_Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+// @font-face {
+//   font-family: GTWalsheim;
+//   src: url("../assets/fonts/GTWalsheimPro-Regular.woff2") format("woff2"),
+//     url("../assets/fonts/GTWalsheimPro-Regular.woff") format("woff");
+//   font-style: normal;
+//   font-weight: bold;
+// }
+// @font-face {
+//   font-family: GTWalsheim Md;
+//   src: url("../assets/fonts/GTWalsheimPro-Medium.woff2") format("woff2"),
+//     url("../assets/fonts/GTWalsheimPro-Medium.woff") format("woff");
+//   font-style: normal;
+//   font-weight: bold;
+// }
+// @font-face {
+//   font-family: GTWalsheim Bold;
+//   src: url("../assets/fonts/GTWalsheimPro-Bold.woff2") format("woff2"),
+//     url("../assets/fonts/GTWalsheimPro-Bold.woff") format("woff");
+//   font-style: normal;
+//   font-weight: bold;
+// }
+// @font-face {
+//   font-family: Sharetechmono;
+//   src: url("../assets/fonts/sharetechmono-regular-webfont.woff") format("woff2"),
+//     url("../assets/fonts/sharetechmono-regular-webfont.woff2") format("woff");
+//   font-style: normal;
+//   font-weight: bold;
+// }
+
+// .typograghy__links { C:\Users\Woron\Desktop\Projects\personal-portfolio\portfolio-website\src\assets\fonts\GTWalsheimPro-Regular.woff2
+//   font-style: normal;
+//   font-weight: bold;C:\Users\Woron\Desktop\Projects\personal-portfolio\portfolio-website\src\assets\fonts\Euclid Circular B Bold Italic.ttf
+//   font-size: toRem(16);
+//   line-height: 1.2em;
+//   color: $link-text;
+//   margin: 0;
+// }C:\Users\Woron\Desktop\Projects\personal-portfolio\portfolio-website\src\assets\fonts\GTWalsheimPro-Medium.woff
+
+// h1 {
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: toRem(34);
+//   line-height: 1.2em;
+//   margin: 0;
+
+//   @include smMinBreakPoint {
+//     font-size: toRem(48);
+//   }
+// }
+
+// h2 {
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: toRem(36);
+//   line-height: 43px;
+// }
+
+// h3 {
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: toRem(16);
+//   line-height: 125%;
+//   margin: 0;
+
+//   @include customMinBreakPoint(400) {
+//     font-size: toRem(18);
+//   }
+// }
+
+// h4 {
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: toRem(14);
+//   line-height: 125%;
+//   margin: 0;
+// }
+
+// p {
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: toRem(16);
+//   line-height: 19px;
+// }
+
+// .typography__subhead {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: toRem(20);
+//   line-height: 125%;
+//   letter-spacing: 0.03em;
+//   margin-top: 14px;
+
+//   @include smMinBreakPoint {
+//     font-size: toRem(26);
+//   }
+// }
+.link-text {
+}
